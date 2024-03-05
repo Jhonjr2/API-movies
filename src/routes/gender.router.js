@@ -3,11 +3,11 @@ const express = require('express');
 
 const genderRouter = express.Router();
 
-genderRouter.route('/gender')
+genderRouter.route('/genders')
     .get(getAll)
     .post(create);
 
-genderRouter.route('/gender/:id')
+genderRouter.route('/genders/:id')
     .get(getOne)
     .delete(remove)
     .put(update);

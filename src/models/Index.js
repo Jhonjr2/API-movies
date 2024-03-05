@@ -9,6 +9,6 @@ Actor.belongsToMany(Movie, {through: 'movie_actor'})
 Movie.belongsToMany(Director, {through: 'movie_director'})
 Director.belongsToMany(Movie, {through: 'movie_director'})
 
-Movie.belongsToMany(Gender, {through: 'movie_genre'})
-Gender.belongsToMany(Movie, {through: 'movie_genre'})
+Movie.belongsToMany(Gender, {through: 'movie_gender'})
+Gender.belongsToMany(Movie, {through: 'movie_gender'})
 
